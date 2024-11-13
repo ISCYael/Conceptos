@@ -1,0 +1,103 @@
+/* Reinicio de márgenes y configuración básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Configuración general de fondo y color */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal centrado */
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de encabezado */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #630af4;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.header-content .profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+h1, h2 {
+    margin: 5px 0;
+}
+
+/* Estilo de secciones */
+section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h3 {
+    margin-bottom: 10px;
+    color: #630af4;
+}
+
+/* Estilos de contenido específico */
+.about p, .experience div, .projects div, .contact p {
+    margin-bottom: 10px;
+}
+
+/* Lista estilizada */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Estilos de contacto */
+.contact {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+/* Estilos de las tarjetas */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+/* Ajuste de diseño para pantallas grandes */
+@media (min-width: 600px) {
+    .main-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
