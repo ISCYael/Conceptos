@@ -3,85 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum - Isaac Yael Arango Garcia</title>
+    <title>Conceptos Aprendidos en el Modulo</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <main>
+        <div class="card">
+            <h1>Glosario del Modulo 1 </h1>
 
-<!-- Contenedor Principal -->
-<div class="main-container container">
-    <div class="row">
-        <!-- Columna Izquierda -->
-        <div class="col-md-6">
-            <header class="header-content">
-                <img src="foto_Beecker.png" alt="Foto de Isaac Yael Arango Garcia" class="profile-photo">
-                <h1>Arango Garcia Isaac Yael</h1>
-                <h2>Programador Junior</h2>
-                <p>Estado de México, México</p>
-            </header>
-
-            <section class="about mt-4">
-                <h3>Acerca de Mí</h3>
-                <p>Me considero alguien con facilidad para trabajar en equipo, liderar proyectos y trabajar bajo órdenes. Respeto los tiempos y prefiero trabajar con planificación, siendo muy meticuloso con los proyectos realizados.</p>
-            </section>
-
-            <section class="contact mt-4">
-                <h3>Contacto</h3>
-                <p>Teléfono: (55) 2925 7645</p>
-                <p>Email: 2020452005@teschi.edu.mx | fxzzy54@gmail.com</p>
-                <p><a href="https://github.com/ISCYael" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/isaac-yael-arango-garcia-a290272ab/" target="_blank">LinkedIn</a></p>
-            </section>
-        </div>
-
-        <!-- Columna Derecha -->
-        <div class="col-md-6">
-            <section class="experience">
-                <h3>Experiencia Laboral</h3>
-                <div class="card">
-                    <h5 class="card-title">Programador Freelance</h5>
-                    <p>Creación e implementación de paquetería de Java, buenas prácticas y administración de bases de datos remotas.</p>
+            <div class="section github" onclick="toggleDetails(this)">
+                <h2>GitHub</h2>
+                <p>GitHub es una plataforma de desarrollo colaborativo basada en la web que permite a los desarrolladores gestionar proyectos y controlar versiones de código fuente utilizando Git.</p>
+                <div class="extra-info">
+                    <p>GitHub permite la colaboración en proyectos de software mediante un sistema de control de versiones, gestionando repositorios que permiten a los desarrolladores trabajar juntos en el mismo proyecto. Es muy usado en equipos de desarrollo ágil y proyectos de código abierto.</p>
                 </div>
-                <div class="card">
-                    <h5 class="card-title">Programador Junior en C# - CCAI TESCHI</h5>
-                    <p>Implementación de buenas prácticas, manejo de repositorios en GitHub y servidores en la nube para bases de datos.</p>
-                </div>
-            </section>
+            </div>
 
-            <section class="education mt-4">
-                <h3>Educación</h3>
-                <div class="card">
-                    <h5 class="card-title">Ingeniería en Sistemas Computacionales</h5>
-                    <p>Tecnológico de Estudios Superiores de Chimalhuacán, 2020-2024</p>
+            <div class="section buenas-practicas" onclick="toggleDetails(this)">
+                <h2>Buenas Prácticas de Programación</h2>
+                <p>Las buenas prácticas en programación incluyen escribir código limpio, utilizar nombres descriptivos para las variables, documentar el código adecuadamente y seguir convenciones de estilo.</p>
+                <div class="extra-info">
+                    <p>Las buenas prácticas garantizan que el código sea fácil de mantener, escalable y comprensible por otros desarrolladores. Involucra también hacer pruebas unitarias, revisar el código de otros (code reviews) y seguir patrones de diseño.</p>
                 </div>
-            </section>
+            </div>
 
-            <section class="projects mt-4">
-                <h3>Proyectos Personales</h3>
-                <div class="card">
-                    <h5 class="card-title">Sistema de Detección de Enfermedades en Cultivos</h5>
-                    <p>Creación de un sistema en Python con OpenCV para detectar el estado de cultivos.</p>
+            <div class="section html-css" onclick="toggleDetails(this)">
+                <h2>HTML y CSS</h2>
+                <p>HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web. Define la estructura de la web. CSS (Cascading Style Sheets) es utilizado para dar formato y diseño a las páginas web, controlando colores, fuentes, y disposición.</p>
+                <div class="extra-info">
+                    <p>HTML forma la estructura básica de las páginas web, mientras que CSS se utiliza para aplicar estilo y diseño visual a esos elementos. Juntos, permiten crear páginas web interactivas y atractivas. CSS también incluye características avanzadas como animaciones, flexbox y grid layout.</p>
                 </div>
-                <div class="card">
-                    <h5 class="card-title">Sistema de Detección de Señales de Auxilio</h5>
-                    <p>Sistema en Python para detectar señales de auxilio en cámaras de seguridad, con envío de alertas.</p>
-                </div>
-            </section>
+            </div>
 
-            <section class="certifications mt-4">
-                <h3>Certificaciones</h3>
+            <div class="section ia" onclick="toggleDetails(this)">
+                <h2>Inteligencia Artificial (IA)</h2>
+                <p>La inteligencia artificial es una rama de la informática que se enfoca en la creación de sistemas capaces de realizar tareas que requieren inteligencia humana.</p>
+                <div class="extra-info">
+                    <p>Los avances en IA incluyen el aprendizaje automático, procesamiento de lenguaje natural, visión computarizada, y la toma de decisiones autónomas. La IA está revolucionando muchos sectores, desde la medicina hasta la automoción.</p>
+                </div>
+            </div>
+
+            <div class="section git-conceptos" onclick="toggleDetails(this)">
+                <h2>Conceptos Git y GitHub</h2>
                 <ul>
-                    <li>Diseños UX de Google (2024)</li>
-                    <li>Manejo de SSIS y SSAS (2024)</li>
-                    <li>Oracle APEX (2024)</li>
+                    <li><strong>Git</strong>: Es un sistema de control de versiones que permite gestionar y rastrear los cambios realizados en el código fuente.</li>
+                    <li><strong>Ramas (Branches)</strong>: Son versiones separadas del código.</li>
+                    <li><strong>git clone</strong>: Comando para copiar un repositorio remoto a tu computadora local.</li>
+                    <li><strong>git commit</strong>: Comando para guardar cambios realizados en el repositorio local.</li>
+                    <li><strong>git push</strong>: Comando para enviar cambios desde el repositorio local al repositorio remoto.</li>
+                    <li><strong>git fetch</strong>: Comando para obtener los cambios de un repositorio remoto, pero sin fusionarlos con tu rama actual. Esto te permite ver los cambios sin aplicarlos directamente.</li>
+                    <li><strong>origin</strong>: Es el nombre por defecto del repositorio remoto. Generalmente se refiere al repositorio desde el que clonaste tu proyecto, y es el repositorio al que envías tus cambios con git push.</li>
+                    <li><strong>git merge</strong>: Comando que se utiliza para combinar cambios de diferentes ramas dentro de tu repositorio. Se puede usar para fusionar la rama principal con una rama de características o viceversa.</li>
+                    <li><strong>Mezcla de código de otro repositorio</strong>: Puedes mezclar o fusionar el código de otro repositorio en el tuyo mediante un git fetch para traer los cambios y luego un git merge para integrarlos a tu rama local.</li>
                 </ul>
-            </section>
+                <div class="extra-info">
+                    <p><strong>Git</strong> es un sistema distribuido que facilita el trabajo colaborativo en proyectos de software, permitiendo a los desarrolladores trabajar en diferentes ramas y fusionar cambios sin conflictos. GitHub agrega una capa de colaboración en la web, permitiendo revisar el código, crear pull requests, y gestionar proyectos.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Git-logo.svg" alt="Logo Git" class="concept-image">
+                    
+                    <p><strong>git fetch</strong> es útil cuando deseas actualizar tu repositorio local con los cambios más recientes de un repositorio remoto, pero sin aplicar esos cambios directamente a tu rama activa. Esto te da la oportunidad de revisar los cambios antes de incorporarlos.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Git-fethch-command.svg" alt="Git fetch" class="concept-image">
+                    
+                    <p><strong>origin</strong> es el nombre predeterminado para el repositorio remoto. Cuando clonas un repositorio, Git asocia el nombre origin al repositorio desde el cual lo clonaste. Puedes usar este nombre para interactuar con el repositorio remoto en comandos como git push origin master o git pull origin feature-branch.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/GitHub_logo_2013.svg" alt="GitHub logo" class="concept-image">
+                    
+                    <p><strong>git merge</strong> permite combinar los cambios de una rama diferente con la rama activa. Este comando es esencial cuando trabajas en equipos, ya que permite que los cambios de diversas ramas se integren sin sobrescribir el trabajo de otros desarrolladores.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Merge_Icon.svg" alt="Git merge" class="concept-image">
+                    
+                    <p><strong>Mezclar código de otro repositorio</strong> implica incorporar cambios desde un repositorio remoto que no sea el tuyo. Esto es común cuando un proyecto utiliza código de otros proyectos o cuando deseas colaborar con repositorios externos.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Git-merge.svg" alt="Git merge other repo" class="concept-image">
+                </div>
+            </div>
+            
         </div>
-    </div>
-</div>
+    </main>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
+<script>
+    // Función para expandir o contraer detalles al hacer clic en la sección
+function toggleDetails(section) {
+    // Toggea la clase 'expanded' para mostrar u ocultar la información
+    section.classList.toggle('expanded');
+}
+
+</script>
 </html>

@@ -1,103 +1,153 @@
-/* Reinicio de márgenes y configuración básica */
-* {
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #beb2b2;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Configuración general de fondo y color */
-body {
-    background-color: #f9f9f9;
-    color: #333;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-height: 100vh;
+    color: #000000;
+    box-sizing: border-box;
 }
 
-/* Contenedor principal centrado */
-.main-container {
+main {
     width: 100%;
-    max-width: 1200px;
-    margin: 20px;
+    max-width: 1000px; /* Máximo ancho del contenedor */
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos de encabezado */
-header {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #630af4;
-    color: #fff;
-    border-radius: 8px;
-}
-
-.header-content .profile-photo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-h1, h2 {
-    margin: 5px 0;
-}
-
-/* Estilo de secciones */
-section {
     margin-top: 20px;
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-section h3 {
-    margin-bottom: 10px;
-    color: #630af4;
-}
-
-/* Estilos de contenido específico */
-.about p, .experience div, .projects div, .contact p {
-    margin-bottom: 10px;
-}
-
-/* Lista estilizada */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 5px;
-}
-
-/* Estilos de contacto */
-.contact {
-    text-align: center;
-    padding: 10px 0;
-    font-size: 0.9em;
-}
-
-/* Estilos de las tarjetas */
+/* Estilo de la tarjeta */
 .card {
-    border: none;
-    border-radius: 12px;
+    background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f0f0f0;
-    margin-bottom: 15px;
-    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    margin: 0 auto; /* Centrado de la tarjeta */
+    width: 100%;
 }
 
-/* Ajuste de diseño para pantallas grandes */
-@media (min-width: 600px) {
-    .main-container {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
+.card h1 {
+    font-size: 28px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para cada sección */
+.section {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.section h2 {
+    font-size: 22px;
+    color: #2196F3;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Colores personalizados para cada concepto */
+.github {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-left: 5px solid #24292F;
+}
+
+.buenas-practicas {
+    background-color: #fff3e0;
+    padding: 10px;
+    border-left: 5px solid #FF9800;
+}
+
+.html-css {
+    background-color: #e1f5fe;
+    padding: 10px;
+    border-left: 5px solid #039BE5;
+}
+
+.ia {
+    background-color: #e8f5e9;
+    padding: 10px;
+    border-left: 5px solid #4CAF50;
+}
+
+/* Estilo para la información extra que se muestra al hacer clic */
+.extra-info {
+    display: none; /* Oculto por defecto */
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Cuando se haga clic en la sección, se expandirá la información */
+.section.expanded .extra-info {
+    display: block;
+}
+
+/* Hacer la tarjeta más responsive */
+@media (max-width: 768px) {
+    .card {
+        padding: 15px;
+        margin: 10px;
     }
+
+    .card h1 {
+        font-size: 24px;
+    }
+
+    .section h2 {
+        font-size: 18px;
+    }
+
+    .section p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .card h1 {
+        font-size: 20px;
+    }
+
+    .section h2 {
+        font-size: 16px;
+    }
+
+    .section p {
+        font-size: 12px;
+    }
+}
+/* Estilo para las imágenes dentro de los conceptos */
+.concept-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para las imágenes */
+.concept-image:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
+}
+
+/* Contenedor de imágenes cuando se expande la información */
+.extra-info img {
+    display: block;
+    margin: 20px 0;
+    max-width: 100%;
 }
