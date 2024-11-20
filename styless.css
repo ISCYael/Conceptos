@@ -1,0 +1,48 @@
+.title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.flex-item {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.eladio {
+    background-color: green;
+}
+
+.bad-bunny {
+    background-color: red;
+}
+
+.anuel {
+    background-color: black;
+}
+
+.natanael {
+    background-color: lightgray;
+    color: black; /* Texto negro para contraste */
+}
